@@ -4,7 +4,7 @@ import { Providers } from './providers'
 import ThemeSwitch from '@/components/ThemeSwitch'
 
 export const metadata = {
-  title: 'Designer Dada Clone',
+  title: 'blog page',
   description: 'A minimalist portfolio',
 }
 
