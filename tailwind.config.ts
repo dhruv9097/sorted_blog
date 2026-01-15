@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: 'class', // <--- This enables the toggle!
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +11,7 @@ const config: Config = {
     extend: {},
   },
   plugins: [
-    require('@tailwindcss/typography'), // This fixes your blog post styling
+    require('@tailwindcss/typography'), 
   ],
 };
 export default config;

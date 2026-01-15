@@ -10,7 +10,7 @@ export default function Home() {
       {/* Profile Section */}
       <section className="flex flex-col-reverse sm:flex-row justify-between items-start gap-8">
         <div className="space-y-4 max-w-lg">
-          <h1 className="text-3xl font-bold">DHRUV</h1> {/* Removed text-black */}
+          <h1 className="text-3xl font-bold">DHRUV</h1> 
           <p className="text-gray-400 leading-relaxed">
             I'm a product designer and founder building cool things. 
           </p>

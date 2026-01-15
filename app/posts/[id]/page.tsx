@@ -1,10 +1,8 @@
 import { getPostData } from '../../../lib/posts';
 
 export default async function Post({ params }: { params: { id: string } }) {
-  // Wait for the params to be ready (Next.js requirement)
   const { id } = await params;
   
-  // Fetch the post data
   const postData = await getPostData(id);
 
   return (
@@ -14,7 +12,6 @@ export default async function Post({ params }: { params: { id: string } }) {
         <div className="text-gray-500 dark:text-gray-400 font-mono text-sm">{postData.date}</div>
       </header>
       
-      {/* This renders the Markdown HTML */}
       <div
         className="prose prose-lg max-w-none"
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}

@@ -1,4 +1,4 @@
-"use client"; // <--- This tells Next.js: "Send this JavaScript to the browser!"
+"use client"; 
 
 import { useEffect, useState } from "react";
 

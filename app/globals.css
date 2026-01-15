@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ... keep your @tailwind lines at the top ... */
+
 
 @layer utilities {
   /* Force text color in Dark Mode */
@@ -18,6 +18,6 @@
   .dark .prose p, 
   .dark .prose li,
   .dark .prose ul {
-    color: #d1d5db !important; /* Light gray for readability */
+    color: #d1d5db !important;
   }
 }

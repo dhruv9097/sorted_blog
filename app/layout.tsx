@@ -4,7 +4,7 @@ import { Providers } from './providers'
 import ThemeSwitch from '@/components/ThemeSwitch'
 
 export const metadata = {
-  title: 'blog page',
+  title: 'blog page ',
   description: 'A minimalist portfolio',
 }
 
@@ -15,10 +15,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* Here is the magic:
-         bg-white text-black       -> Standard (Day)
-         dark:bg-black dark:text-white -> Night Mode
-      */}
       <body className="max-w-2xl mx-auto px-6 py-10 font-sans transition-colors duration-300 bg-white text-black dark:bg-black dark:text-white">
         
         <Providers>

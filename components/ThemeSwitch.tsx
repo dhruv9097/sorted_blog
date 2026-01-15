@@ -20,7 +20,6 @@ export default function ThemeSwitch() {
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className="p-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
     >
-      {/* Show Moon for Dark Mode, Sun for Light Mode */}
       {theme === 'dark' ? 'Go Light' : 'Go Dark'}
     </button>
   )
