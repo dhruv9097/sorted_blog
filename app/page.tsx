@@ -21,19 +21,18 @@ export default function Home() {
 
         <div className="text-lg leading-relaxed text-gray-800 dark:text-gray-300">
           <p className="mb-4">
-            I'm pobably product designer and founder building <span className="italic underline decoration-gray-400 underline-offset-4">Peerlist</span> and <span className="italic underline decoration-gray-400 underline-offset-4">AutoSend</span>. 
+            I'm pobably a product designer and AI/ML <span className="italic underline decoration-gray-400 underline-offset-4">Enthusiast</span>. 
             Over the past few days, I've focused on designing beautiful software that people might love to use.
           </p>
           <p>
-            When I'm not designing, I love shooting street <span className="italic underline decoration-gray-400 underline-offset-4">photography</span> on film with my Moto G54.
+            When I'm not designing, I love shooting street <span className="italic underline decoration-gray-400 underline-offset-4">photography</span> with my Moto G54.
           </p>
         </div>
 
         {/* Minimal Social Links (Text based to fit the vibe) */}
         <div className="flex gap-6 text-sm italic text-gray-500">
             <a href="https://github.com/dhruv9097" className="hover:text-black dark:hover:text-white hover:underline">GitHub</a>
-            <a href="https://linkedin.com" className="hover:text-black dark:hover:text-white hover:underline">LinkedIn</a>
-            <a href="https://twitter.com" className="hover:text-black dark:hover:text-white hover:underline">Twitter/X</a>
+            <a href="https://www.linkedin.com/in/dhruv-singh-9551b1286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-black dark:hover:text-white hover:underline">LinkedIn</a>
         </div>
       </section>
 
@@ -51,37 +50,15 @@ export default function Home() {
             <ProjectItem 
                 title="Portfolio V1" 
                 desc="Minimalist static site generator" 
-                link="https://github.com" 
-            />
-            <ProjectItem 
-                title="NLP Analyzer" 
-                desc="Python sentiment analysis tool" 
-                link="https://github.com" 
+                link="https://github.com/dhruv9097/sorted_blog" 
             />
              <ProjectItem 
-                title="Fitness Tracker" 
+                title="Fitness Tracker(to be deployed)" 
                 desc="Full-stack workout logger" 
-                link="https://github.com" 
+                link="https://github.com/dhruv9097" 
             />
         </div>
       </section>
-
-      {/* 3. WRITING SECTION */}
-      <section>
-        <h2 className="font-bold text-xl mb-6">Writing</h2>
-        {/* Pass data to search, but we need to style PostSearch to match this vibe too. 
-            For now, let's just list them simply to match the screenshot. */}
-        <div className="space-y-4">
-          {allPostsData.map(({ id, date, title }) => (
-            <Link href={`/posts/${id}`} key={id} className="group flex justify-between items-baseline">
-                <h3 className="text-lg group-hover:italic group-hover:underline decoration-gray-500 underline-offset-4">
-                  {title}
-                </h3>
-                <span className="text-sm text-gray-500 font-sans">{date}</span>
-            </Link>
-          ))}
-        </div>
-      </section> 
     </div>
   );
 }

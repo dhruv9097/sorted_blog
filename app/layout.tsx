@@ -25,6 +25,7 @@ export default function RootLayout({
             <div>
               <nav className="max-w-2xl flex items-center gap-6 text-sm text-gray-500">
                 <Link href="/" className="hover:text-black dark:hover:text-white">Home</Link>
+                <Link href="/resume" className="hover:text-black dark:hover:text-white">Resume</Link>
                 <Link href="/favorites" className="hover:text-black dark:hover:text-white">Favorites</Link>
                 <ThemeSwitch />
               </nav>
@@ -51,7 +52,7 @@ export default function RootLayout({
             </div>
 
             <p className="text-xs text-gray-500 font-sans">
-              This site template is not open sourced and  not available on <a href="#" className="underline">GitHub</a>.
+              This site template is open sourced and available on <a href="#" className="underline">GitHub</a>.
             </p>
             <p className="text-xs text-gray-500 font-sans underline italic">singh.dhruv9097@gmail.com</p>
           </footer>
